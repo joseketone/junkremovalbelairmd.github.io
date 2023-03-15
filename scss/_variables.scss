@@ -1,0 +1,87 @@
+// -----------------------------------------------------------------------------------
+
+// 	_variables.scss
+
+// -----------------------------------------------------------------------------------
+
+
+//  ----------------------------------------------------------------
+// 	Base Colors
+// -----------------------------------------------------------------
+
+$theme-color-1:           #05d561 !default;
+$theme-color-2:           darken($theme-color-1, 6%) !default;
+
+$theme-color-3:           #ff991f !default;
+$theme-color-4:           #ef8405 !default;
+
+$color-gradient-1:        #23479c !default;
+$color-gradient-2:        #468ae7 !default;
+$color-gradient-3:        #3e69d2 !default;
+$color-gradient-4:        #2196ee !default;
+
+$color-red:               #eb0808 !default;
+$color-yellow:            #fec524 !default;
+$color-green:             #1a9e0f !default;
+
+$body-color:              #888 !default;
+
+$dark-color:			  #222 !default;
+
+$link-color: 			  #05d561 !default;
+$link-hover-color: 		  #222 !default;
+$link-focus-color: 		  #05d561 !default;
+
+$heading-color:           #222 !default;
+
+$highlight-color:		 		#222 !default;
+$highlight-bg-color: 			#c0eaf5 !default;
+
+
+
+//  ----------------------------------------------------------------
+// 	Line Height Variables
+// -----------------------------------------------------------------
+
+$line-height-base:              1.75;
+$line-height-content:           1.8;
+$line-height-heading:           1.4;
+
+
+//  ----------------------------------------------------------------
+// 	Font Families
+// -----------------------------------------------------------------
+
+$body-font:                     "Open Sans", 'Almarai', sans-serif;
+$heading-font:                  "Titillium Web", 'Almarai', sans-serif;
+$secondary-font:                "Titillium Web", 'Almarai', sans-serif;
+
+
+//  ----------------------------------------------------------------
+// 	Font Sizes
+// -----------------------------------------------------------------
+
+$font-size-base:                16px;
+
+// Font Size Headings
+$font-size-h1:                  42px;
+$font-size-h2:                  36px;
+$font-size-h3:                  30px;
+$font-size-h4:                  24px;
+$font-size-h5:                  18px;
+$font-size-h6:                  16px;
+
+// Font Size Custom
+$font-size-10: 					10px;
+$font-size-11: 					11px;
+$font-size-12: 					12px;
+$font-size-13: 					13px;
+$font-size-14: 					14px;
+$font-size-15: 					15px;
+$font-size-16: 					16px;
+$font-size-17: 					17px;
+$font-size-18: 					18px;
+$font-size-19: 					19px;
+$font-size-20: 					20px;
+$font-size-22: 					22px;
+

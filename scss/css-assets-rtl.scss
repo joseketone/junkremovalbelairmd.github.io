@@ -1,0 +1,27 @@
+/*=====================================================================
+
+	CSS ASSETS 'RTL'
+	----------------
+
+	Here are all imports of css libraries and helpers like
+	Bootstrap, fontAwesome, Slick, .. etc.
+
+ *=================================================================== */
+
+
+// CSS Assets 'RTL' Imports
+// ==================================
+
+@import "https://fonts.googleapis.com/css?family=Almarai:300,400,700&display=swap&subset=arabic";
+@import "_variables";
+@import "bootstrap";
+@import "bootstrap-rtl";
+@import "slick/slick.scss";
+@import "../fonts/fontawesome/css/all.css";
+@import "https://use.fontawesome.com/releases/v5.3.1/css/v4-shims.css";
+@import "../fonts/Stroke-Gap-Icons-Webfont/style.css";
+@import "magnific-popup";
+// @import "hamburgers/hamburgers";
+@import "bg-patterns";
+
+// ==================================

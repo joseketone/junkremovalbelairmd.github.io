@@ -1,0 +1,240 @@
+// =====================================
+//  header.scss
+//   |
+//   |-> Header
+// =====================================
+
+
+@import "_variables";
+@import "helpers-placeholders";
+
+/**
+  * -------------------------------------------------------------------------------
+  * ( 03 ) - Header
+  * -------------------------------------------------------------------------------
+  *
+  *  This part contains logo, main menu and header bars.
+  *
+  * ------
+  *
+  *  Header is divided to the following sections:
+  *
+  *    |
+  *    |-->  [ 01 ] - Logo
+  *    |-->  [ 02 ] - Menu Main
+  *    |-->  [ 03 ] - Header Bars
+  *
+  */
+
+
+#header {
+  position: relative;
+  top: 0;
+  left: 0;
+  // z-index: 5;
+  width: 100%;
+  // font-size: 13px;
+}
+
+
+/*  [ 01 ] - Logo
+=================== */
+
+.logo {
+  display: inline-block;
+
+  img {
+    max-height: 100%;
+  }
+
+  h3,
+  h3 + span {
+    display: none;
+  }
+
+  &.text-white {
+    h3,
+    span {
+      color: #fff;
+    }
+
+    span {
+      // opacity: 0.7;
+    }
+  }
+
+  &.logo-text {
+    // text-align: left;
+
+    img {
+      display: none;
+    }
+
+    h3,
+    h3 + span {
+      display: block;
+    }
+
+    h3 {
+      position: relative;
+      margin-bottom: -1px;
+      font-size: 20px;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    h3 + span {
+      font-size: 11px;
+      // opacity: 0.7;
+      color: $body-color;
+    }
+  }
+}
+
+.logo-header {
+  position: relative;
+  display: flex;
+  flex-direction: column; // to set each flex childs as one column
+  justify-content: center; // to center content vertically
+  // align-items: center; // to center content horizontally
+  height: 43px;
+  // float: left;
+  margin-right: 20px;
+  transition: color 0.2996s, top 0.3s;
+
+  @media (max-width: 480px) {
+    height: 35px;
+  } // < 480px width
+  
+  &.logo-text {
+    text-align: left;
+
+    h3 {
+
+    }
+  }
+}
+
+
+/*  [ 03 ] - Header Bars
+========================== */
+
+/* Header Bar */
+.header-bar,
+.header-bar-wrap {
+  background: transparent;
+  transition: height 0.3s, background 0.3s;
+}
+
+.header-bar-wrap {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  // border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.header-bar {
+  .container,
+  .row,
+  [class*="col-"] {
+    height: 100%;
+  }
+
+  .row {
+    // display: flex;
+  }
+
+  .col-md-12 {
+    // display: flex;
+    width: 100%;
+  }
+
+  .hb-content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: all 0.2s;
+  }
+}
+
+/* Header Bar 1 */
+#header-bar-1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  
+  .hb-content {
+    // align-items: initial;
+    // at responsive it needs to change.
+    margin-left: auto;
+  }
+
+  &,
+  .header-bar-wrap {
+    height: 110px;
+    // background-color: #fff;
+  }
+
+  .header-bar-wrap {
+    z-index: 1;
+  }
+
+  &.is-sticky {
+    &,
+    .header-bar-wrap { 
+      height: 90px; // height when is-sticky
+
+      @media (max-width: 480px) {
+        height: auto;
+      } // < 480px width
+    }
+
+    .header-bar-wrap {
+      background-color: #222;
+    }
+
+    .hb-content {
+      @media (max-width: 480px) {
+        padding: 20px 0;
+      } // < 480px width
+    }
+  }
+
+  .logo-header {
+    // margin-left: 20px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  #header-bar-1 {
+    &,
+    .header-bar-wrap {
+      height: auto;
+    }
+    
+    .hb-content {
+      // flex-direction: column;
+      padding: 30px 0;
+      // margin-bottom: -5px;
+    }
+
+    .logo-header {
+      margin: 0;
+    }
+  }
+} // < 480px width
+
+
+
+
+
+// Imports ( Rest imports )
+// ==================================
+
+@import "helpers-placeholders";
+
+// ==================================

@@ -1,0 +1,221 @@
+/* =====================================================================
+ *   Custom CSS Optimization for RTL Purpose
+ * =================================================================== */
+
+ @import "_variables";
+
+/* Body */
+body {
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+#content {
+  line-height: 1.8;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { letter-spacing: -0.8px; }
+
+h1,
+h2 {
+  // margin-bottom: 12px;
+  line-height: 1.45;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  // margin-bottom: 8px;
+  line-height: 1.45;
+}
+
+
+h1 { font-size: 50px; }
+h2 { font-size: 43px; }
+h3 { font-size: 35px; }
+h4 { font-size: 28px; }
+h5 { font-size: 24px; }
+h6 { font-size: 20px; }
+
+@media (max-width: 1200px) {
+  h1 { font-size: $font-size-h1 * 0.9 }
+  h2 { font-size: $font-size-h2 * 0.9 }
+  h3 { font-size: $font-size-h3 * 0.9 }
+  h4 { font-size: $font-size-h4 * 0.9 }
+  h5 { font-size: $font-size-h5 * 0.9 }
+  h6 { font-size: $font-size-h6 * 0.9 }
+} // < 1200px width
+
+@media (max-width: 768px) {
+  h3,
+  h4,
+  h5,
+  h6 { 
+    // margin-bottom: 12px;
+  }
+  
+  h1 { font-size: $font-size-h1 * 0.8 }
+  h2 { font-size: $font-size-h2 * 0.8 }
+  h3 { font-size: $font-size-h3 * 0.8 }
+  h4 { font-size: $font-size-h4 * 0.8 }
+  h5 { font-size: $font-size-h5 * 0.8 }
+  h6 { font-size: $font-size-h6 * 0.8 }
+} // < 768px width
+
+@media (max-width: 480px) {
+  h3,
+  h4,
+  h5,
+  h6 { 
+    // margin-bottom: 10px;
+  }
+  
+  h1 { font-size: $font-size-h1 * 0.7 }
+  h2 { font-size: $font-size-h2 * 0.7 }
+  h3 { font-size: $font-size-h3 * 0.7 }
+  h4 { font-size: $font-size-h4 * 0.7 }
+  h5 { font-size: $font-size-h5 * 0.7 }
+  h6 { font-size: $font-size-h6 * 0.7 }
+} // < 480px width
+
+
+/* Section Title */
+.section-title {
+  p {
+    font-size: 22px;
+  }
+}
+
+/* Buttons */
+.btn {
+  font-weight: 700;
+}
+
+.btn.medium {
+  font-size: 18px;
+}
+
+.btn.large {
+  font-size: 20px;
+}
+
+/* Btn Video */
+.btn-video {
+  text-indent: 0;
+}
+
+/* List Links */
+.list-links li a {
+  font-size: 16px;
+}
+
+
+
+ /* Slide Content */
+ .slide-content p {
+    // margin-bottom: 15px;
+}
+
+.slide-content {
+  .subheading {
+    margin-bottom: 5px;
+    letter-spacing: 0;
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 55px;
+    line-height: 1.4;
+
+    @media (max-width: 1200px) {
+      // font-size: 50px;
+    } // < 1200px width
+
+    @media (max-width: 768px) {
+      // font-size: 45px;
+    } // < 768px width
+
+    @media (max-width: 480px) {
+      // font-size: 35px;
+    } // < 480px width
+  }
+
+  .description {
+    font-size: 21px;
+  }
+}
+
+/* Fun Facts */
+.counter-stats {
+  direction: ltr;
+  display: inline-flex;
+
+  > * {
+    flex-direction: row-reverse;
+  }
+}
+
+
+/* Box Form */
+.box-form {
+  .box-title {
+    p {
+      font-size: 22px;
+    }
+  }
+}
+
+/* Menu Main */
+.menu-main > li > a {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/* Pricing Table */
+.pricing-table {
+  .pt-column-header {
+    .title {
+      letter-spacing: 0;
+      font-size: 17px;
+    }
+
+    .price {
+      .period {
+        margin-top: -5px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+/* Testimonial Single 1 */
+.testimonial-single-1 {
+  .ts-content {
+    font-size: 18px;
+  }
+}
+
+/* Section CTA 1 */
+#section-cta-1 {
+  h1 {
+    line-height: 1.4;
+  }
+
+  .description {
+    margin-top: -5px;
+  }
+}
+
+
+/* Style Switcher */
+.style-switcher .ss-scroll {
+  right: 0 !important;
+}
+

@@ -1,0 +1,68 @@
+/* =====================================================================
+ *   helpers-placeholders.scss
+ * =================================================================== */
+
+@import "_variables";
+
+
+/* BG Gradients */
+%bg-gradient-1 {
+	background-color: $color-gradient-1;
+	background-image: -webkit-linear-gradient(45deg, $color-gradient-1 0%, $color-gradient-2 100%);
+	background-image: -moz-linear-gradient(45deg, $color-gradient-1 0%, $color-gradient-2 100%);
+	background-image: -o-linear-gradient(45deg, $color-gradient-1 0%, $color-gradient-2 100%);
+    background-image: linear-gradient(45deg, $color-gradient-1 0%, $color-gradient-2 100%);
+}
+
+
+@mixin bgGradient(
+					$color-1: #aaa,
+					$color-2: #ccc, 
+					$angle: 0deg
+				) {
+
+	background-color: $color-1;
+	background-image: -webkit-linear-gradient($angle, $color-1 0%, $color-2 100%);
+	background-image: -moz-linear-gradient($angle, $color-1 0%, $color-2 100%);
+	background-image: -o-linear-gradient($angle, $color-1 0%, $color-2 100%);
+    background-image: linear-gradient($angle, $color-1 0%, $color-2 100%);
+}
+
+@mixin btnShadow(
+					$shadowColor: #888,
+					$opacity: 0.41,
+					$param-1: 0,
+					$param-2: 7px,
+					$param-3: 32px,
+					$param-4: 0
+				) {
+
+	box-shadow: $param-1 $param-2 $param-3 $param-4 rgba($shadowColor, $opacity);
+}
+
+@mixin btnSocialShadow($shadowColor: #021628, $opacity: 0.28, $positionSize: 2px 14px) {
+	box-shadow: 0 $positionSize 0 rgba($shadowColor, $opacity);
+}
+
+
+/* Opacity Values */
+%opacity-05 { opacity: 0.05; }
+%opacity-10 { opacity: 0.10; }
+%opacity-15 { opacity: 0.15; }
+%opacity-20 { opacity: 0.20; }
+%opacity-25 { opacity: 0.25; }
+%opacity-30 { opacity: 0.30; }
+%opacity-35 { opacity: 0.35; }
+%opacity-40 { opacity: 0.40; }
+%opacity-45 { opacity: 0.45; }
+%opacity-50 { opacity: 0.50; }
+%opacity-55 { opacity: 0.55; }
+%opacity-60 { opacity: 0.60; }
+%opacity-65 { opacity: 0.65; }
+%opacity-70 { opacity: 0.70; }
+%opacity-75 { opacity: 0.75; }
+%opacity-80 { opacity: 0.80; }
+%opacity-85 { opacity: 0.85; }
+%opacity-90 { opacity: 0.90; }
+%opacity-95 { opacity: 0.95; }
+%opacity-100 { opacity: 1; }

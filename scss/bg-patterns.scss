@@ -1,0 +1,62 @@
+/*=====================================================================
+ 
+	BG PATTERNS
+	-----------
+
+	Here are all css classes of all included background patterns
+
+ *=================================================================== */
+
+
+/**
+ *  [ 01 ] - Pattern Grid
+ *  [ 02 ] - Pattern Texture
+ */
+
+[class*="bg-pattern-"] {
+	background-position: top center;
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+.bg-fixed {
+}
+
+
+/*  [ 01 ] - Pattern Grid
+=========================== */
+
+.bg-pattern-grid {
+	&-1 { background-image: url("../images/general-elements/bg-patterns/grid/1.png"); }
+	&-2 { background-image: url("../images/general-elements/bg-patterns/grid/2.png"); }
+	&-3 { background-image: url("../images/general-elements/bg-patterns/grid/3.png"); }
+	&-4 { background-image: url("../images/general-elements/bg-patterns/grid/4.png"); }
+	&-5 { background-image: url("../images/general-elements/bg-patterns/grid/5.png"); }
+	&-6 { background-image: url("../images/general-elements/bg-patterns/grid/6.png"); }
+}
+
+
+/*  [ 02 ] - Pattern Texture
+============================== */
+
+.bg-pattern-texture {
+	&-1 { background-image: url("../images/general-elements/bg-patterns/texture/1.png"); }
+	&-2 { background-image: url("../images/general-elements/bg-patterns/texture/2.png"); }
+	&-3 { background-image: url("../images/general-elements/bg-patterns/texture/3.png"); }
+	&-4 { background-image: url("../images/general-elements/bg-patterns/texture/4.png"); }
+	&-5 { background-image: url("../images/general-elements/bg-patterns/texture/5.png"); }
+	&-6 { background-image: url("../images/general-elements/bg-patterns/texture/6.png"); }
+	&-7 { background-image: url("../images/general-elements/bg-patterns/texture/7.png"); }
+	&-8 { background-image: url("../images/general-elements/bg-patterns/texture/8.png"); }
+	&-9 { background-image: url("../images/general-elements/bg-patterns/texture/9.png"); }
+	&-10 { background-image: url("../images/general-elements/bg-patterns/texture/10.png"); }
+	&-11 { background-image: url("../images/general-elements/bg-patterns/texture/11.png"); }
+	&-12 { background-image: url("../images/general-elements/bg-patterns/texture/12.png"); }
+	&-13 { background-image: url("../images/general-elements/bg-patterns/texture/13.png"); }
+	&-14 { background-image: url("../images/general-elements/bg-patterns/texture/14.png"); }
+	&-15 { background-image: url("../images/general-elements/bg-patterns/texture/15.png"); }
+}
+
+
+
+
